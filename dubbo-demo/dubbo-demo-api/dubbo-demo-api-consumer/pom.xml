@@ -18,7 +18,8 @@
   ~ under the License.
   -->
 
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
         <artifactId>dubbo-demo-api</artifactId>
         <groupId>org.apache.dubbo</groupId>
@@ -38,13 +39,22 @@
             <artifactId>dubbo-demo-interface</artifactId>
             <version>${project.parent.version}</version>
         </dependency>
+        <!--<dependency>-->
+        <!--<groupId>org.apache.dubbo</groupId>-->
+        <!--<artifactId>dubbo-registry-zookeeper</artifactId>-->
+        <!--</dependency>-->
+        <!--<dependency>-->
+        <!--<groupId>org.apache.dubbo</groupId>-->
+        <!--<artifactId>dubbo-configcenter-zookeeper</artifactId>-->
+        <!--</dependency>-->
+
         <dependency>
             <groupId>org.apache.dubbo</groupId>
-            <artifactId>dubbo-registry-zookeeper</artifactId>
+            <artifactId>dubbo-registry-nacos</artifactId>
         </dependency>
         <dependency>
             <groupId>org.apache.dubbo</groupId>
-            <artifactId>dubbo-configcenter-zookeeper</artifactId>
+            <artifactId>dubbo-configcenter-nacos</artifactId>
         </dependency>
 
         <dependency>
